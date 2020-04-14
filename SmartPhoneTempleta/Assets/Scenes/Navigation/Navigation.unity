@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 262130719}
   - component: {fileID: 262130718}
   m_Layer: 5
-  m_Name: Center
+  m_Name: BodyCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 274575462}
   - component: {fileID: 274575461}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: BodyCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1481,7 +1481,7 @@ GameObject:
   - component: {fileID: 692780123}
   - component: {fileID: 692780122}
   m_Layer: 5
-  m_Name: Center (1)
+  m_Name: BodyCenter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

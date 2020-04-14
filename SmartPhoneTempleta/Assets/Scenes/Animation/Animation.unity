@@ -1752,7 +1752,7 @@ GameObject:
   - component: {fileID: 911396518}
   - component: {fileID: 911396517}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: BodyCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 1110863359}
   - component: {fileID: 1110863358}
   m_Layer: 5
-  m_Name: CenterBackground
+  m_Name: BodyBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
