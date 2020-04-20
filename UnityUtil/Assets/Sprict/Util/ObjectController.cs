@@ -124,6 +124,12 @@ namespace Util
                     number++;
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                GameObject nullObj = null;
+                nullObj.name = "null";
+            }
         }
 
         /// <summary>
@@ -292,8 +298,33 @@ namespace Util
             PlayerPrefs.DeleteKey("SaveData");
         }
 
-        // 例外時に呼ばれるコールバック（デリゲート）
-        // シングルトン
-        // 抽象クラス
+        void OnEnable()
+        {
+            Application.logMessageReceived += HandleLog;
+        }
+
+        void OnDisable()
+        {
+            Application.logMessageReceived -= HandleLog;
+        }
+
+        /// <summary>
+        /// 例外検出時のコールバック
+        /// </summary>
+        /// <param name="logString"></param>
+        /// <param name="stackTrace"></param>
+        /// <param name="type"></param>
+        void HandleLog(string logString, string stackTrace, LogType type)
+        {
+            Debug.Log(logString);
+            Debug.Log(stackTrace);
+            Debug.Log(type);
+
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            UnityEngine.Application.Quit();
+#endif
+        }
     }
 }
