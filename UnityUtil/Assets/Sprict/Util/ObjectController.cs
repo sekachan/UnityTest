@@ -316,15 +316,18 @@ namespace Util
         /// <param name="type"></param>
         void HandleLog(string logString, string stackTrace, LogType type)
         {
-            Debug.Log(logString);
-            Debug.Log(stackTrace);
-            Debug.Log(type);
+            if (type == LogType.Exception)
+            {
+                Debug.Log(logString);
+                Debug.Log(stackTrace);
+                Debug.Log(type);
 
 #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
+                UnityEditor.EditorApplication.isPlaying = false;
 #else
-            UnityEngine.Application.Quit();
+                UnityEngine.Application.Quit();
 #endif
+            }
         }
     }
 }
