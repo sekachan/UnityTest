@@ -63,8 +63,10 @@
     <Compile Include="Assets\Sprict\Character\EnemyChar.cs" />
     <Compile Include="Assets\Sprict\Character\PlayerChar.cs" />
     <Compile Include="Assets\Sprict\Character\StatusData.cs" />
+    <Compile Include="Assets\Sprict\Util\FPS.cs" />
     <Compile Include="Assets\Sprict\Util\ObjectController.cs" />
     <Compile Include="Assets\Sprict\Util\SaveData.cs" />
+    <Compile Include="Assets\Sprict\Util\WebTest.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/sekah/OneDrive/ドキュメント/UnityTest/UnityUtil/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
